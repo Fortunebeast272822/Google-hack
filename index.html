@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +8,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .google-logo {
-            width: 40px; /* Adjust the size as needed */
-            height: 40px;
-            border-radius: 50%; /* Creates a circular shape */
-        }
-    </style>
+
+</style>
 </head>
 <body>
-    <div class="box">
-        <h2>Sign in</h2>
-        <p>Use your Google Account</p>
-        <div>
-            <img src="IMG_0465.jpeg" alt="Google Logo" class="google-logo">
-        </div>
-        <form>
-            <!-- Your form content here -->
-        </form>
-    </div>
+        <div class="box">
+                <h2>Sign in</h2>
+                <p>Use your Google Account</p>
+                <form>
+                  <div class="inputBox">
+                    <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
+                    <label>Username</label>
+                  </div>
+                  <div class="inputBox">
+                        <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+                        <label>Passward</label>
+                      </div>
+                  <input type="submit" name="sign-in" value="Sign In">
+                </form>
+              </div>
 </body>
 </html>
