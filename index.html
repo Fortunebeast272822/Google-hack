@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,23 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
-</style>
+    </style>
+    <script>
+        function submitForm() {
+            // Add any form validation logic here
+
+            // Perform any actions before full redirection
+            alert('Form submitted! Redirecting...');
+
+            // Submit the form using the form action
+            document.forms["signInForm"].submit();
+        }
+    </script>
 </head>
 <body>
-        <div class="box">
-                <h2>Sign in</h2>
-                <p>Use your Google Account</p>
-                <form>
-                  <div class="inputBox">
-                    <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
-                    <label>Username</label>
-                  </div>
-                  <div class="inputBox">
-                        <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
-                        <label>Passward</label>
-                      </div>
-                  <input type="submit" name="sign-in" value="Sign In">
-                </form>
-              </div>
+    <div class="box">
+        <h2>Sign in</h2>
+        <p>Use your Google Account</p>
+        <form name="signInForm" action="your_processing_script.php" method="post" onsubmit="submitForm();">
+            <div class="inputBox">
+                <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Username</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Password</label>
+            </div>
+            <input type="submit" name="sign-in" value="Sign In">
+        </form>
+    </div>
 </body>
 </html>
